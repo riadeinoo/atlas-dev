@@ -1,0 +1,85 @@
+.hero {
+  min-height: 100vh; 
+background-image: url('red-mountains-morning-minimal-4k-dn-1440x900.jpg');  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* On centre la carte au milieu de l'écran */
+.hero {
+  min-height: 100vh;
+  background-image: url('red-mountains-morning-minimal-4k-dn-1440x900.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Alignement centré */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style du rectangle semi-transparent */
+.card {
+  /* Dimensions basées sur vos valeurs Figma (877px x 760px) */
+  width: 80%;
+  max-width: 877px;
+  padding: 40px;
+
+  /* Couleur de fond sombre semi-transparente (noir avec 50% d'opacité) */
+  background-color: rgba(0, 0, 0, 0.5); 
+
+  /* Couleur du texte par défaut */
+  color: white;
+  text-align: center;
+
+  /* Ombre portée légère si nécessaire */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Background: semi-transparent black overlay */
+.card {
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity if needed */
+}
+
+/* Date text at the top (light muted text) */
+.card .date {
+  color: #a0a0a0; /* Gray/muted tone */
+  font-size: 1.1rem;
+}
+
+/* Heading: main white text */
+.card h1 {
+  color: #ffffff; /* Pure white */
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+/* Heading highlight: "de la hauteur" in bright yellow */
+.card h1 span {
+  color: #ffeb3b; /* Bright yellow */
+}
+
+/* Subtitle/description text */
+.card .description {
+  color: #d0d0d0; /* Soft off-white */
+  font-size: 1rem;
+}
+
+/* "Je m'inscris" Button */
+.card .btn {
+  display: inline-block;
+  background-color: #b73232; /* Deep reddish-brown button fill */
+  color: #ffffff; /* White text */
+  padding: 12px 32px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* Optional hover state for the button */
+.card .btn:hover {
+  background-color: #962828;
+}
