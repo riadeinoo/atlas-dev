@@ -60,9 +60,9 @@ body {
     letter-spacing: -0.5px;
 }
 
-.brand-icon {
-    font-size: 1.2rem;
-    font-weight: 400;
+.brand-icon-img {
+    width: 60px;
+    height: 60px;
 }
 
 /* Right Navigation Group */
