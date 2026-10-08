@@ -23,7 +23,7 @@ body {
     }
     100% {
         opacity: 1;
-        filter: blur(2) brightness(1);
+        filter: blur(0px) brightness(1);
     }
 }
 
@@ -67,13 +67,13 @@ body {
     gap: 8px;
     font-size: 1.4rem;
     font-weight: 800;
-    color: #ffffff;
+    color: #000000;
     letter-spacing: -0.5px;
 }
 
 .brand-icon-img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -165,7 +165,7 @@ body {
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.15;
-    color: #111111;
+    color: #fffefe;
     margin-bottom: 25px;
 }
 
@@ -535,4 +535,29 @@ body {
     color: #ffffff;
     font-style: italic;
     line-height: 1.2;
+}
+
+/* ===================================================
+   CUSTOM TRANSPARENT SCROLLBAR
+   =================================================== */
+
+/* 1. Set the overall width of the scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* 2. Make the background track completely invisible/transparent */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* 3. Style the movable thumb with a semi-transparent glass look */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+/* 4. Make the thumb glow slightly when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.45);
 }
