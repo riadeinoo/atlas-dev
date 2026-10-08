@@ -1,3 +1,6 @@
+html {
+    overflow-y: scroll; /* Always reserve scrollbar space so pages don't jump */
+}
 /* Reset & Global Styles */
 * {
     margin: 0;
@@ -40,13 +43,21 @@ body {
 }
 
 /* Navigation Bar Container */
+/* Pushes the logo to the left and .nav-right to the top right */
 .navbar {
     width: 100%;
     max-width: 1300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Spreads brand to left, nav-right to right */
     align-items: center;
     padding: 10px 20px;
+}
+
+/* Groups menu links and S'INSCRIRE button side-by-side */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 /* Brand Logo (Left Side) */
@@ -65,12 +76,6 @@ body {
     height: 60px;
 }
 
-/* Right Navigation Group */
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
 
 /* Nav Menu & Separators */
 .nav-menu {
