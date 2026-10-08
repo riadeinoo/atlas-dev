@@ -10,6 +10,18 @@ body {
     color: #ffffff;
     background-color: #0d0d11;
     overflow-x: hidden;
+    animation: glassFocus 0.2s ease-out forwards;
+}
+
+@keyframes glassFocus {
+    0% {
+        opacity: 0;
+        filter: blur(5px) brightness(0.3);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(2) brightness(1);
+    }
 }
 
 /* Hero Section Container */
