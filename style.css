@@ -405,3 +405,8 @@ input:focus-visible {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
+
+/* Enables smooth transitions when navigating between HTML pages */
+@view-transition {
+  navigation: auto;
+}
