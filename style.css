@@ -240,7 +240,13 @@ input:focus-visible {
 .submit-btn { width: 100%; margin-top: 10px; padding: 14px; border: none; cursor: pointer; font-family: inherit; }
 
 /* --- PROGRAMME --- */
-.program-card { max-width: 820px; text-align: left; padding: 40px; }
+.program-card {
+   max-width: 820px;
+   max-height: 500px; /* Limits box height so internal scroll kicks in */
+   overflow-y: auto;
+   text-align: left;
+   padding: 40px; }
+
 .program-card .page-title { text-align: left; }
 
 .day-section { margin-bottom: 35px; }
@@ -361,4 +367,41 @@ input:focus-visible {
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+}
+
+
+/* --- SCROLLBAR STYLES --- */
+
+/* 1. Main Page Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent; /* Makes the track area completely transparent */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Ensures background behind the thumb is invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent handle */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4); /* Glows slightly when hovered */
+}
+
+/* 2. Program Card Scrollbar (Inside element) */
+.program-card::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+.program-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.program-card::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
